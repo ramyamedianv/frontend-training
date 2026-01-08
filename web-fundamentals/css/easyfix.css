@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Services */
+.service-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

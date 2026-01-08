@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Showcase</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web Fundamentals Blog</h1>
+        <p><em>Learning HTML the right way</em></p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>HTML Semantics Explained</h2>
+
+            <article>
+                <h3>Why Semantic HTML Matters</h3>
+
+                <p>
+                    Semantic HTML improves <strong>accessibility</strong> and
+                    <em>SEO</em>. It helps screen readers understand content.
+                </p>
+
+                <p>
+                    Highlighted concept:
+                    <mark>Semantic elements describe meaning</mark>.
+                </p>
+
+                <p>
+                    According to <cite>HTML Living Standard</cite>,
+                    semantics are essential.
+                </p>
+
+                <p>
+                    Abbreviation example:
+                    <abbr title="HyperText Markup Language">HTML</abbr>
+                </p>
+
+                <p>
+                    <dfn>Semantic HTML</dfn> is HTML that conveys meaning.
+                </p>
+
+                <blockquote>
+                    Semantic HTML is the foundation of accessible web design.
+                </blockquote>
+
+                <p>
+                    Inline quote: <q>Structure gives meaning</q>
+                </p>
+
+                <pre>
+                    <code>
+                    function greet() {
+                    return "Hello World";
+                    }
+                    </code>
+                </pre>
+
+                <p>
+                    Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.
+                </p>
+
+                <p>
+                    Output: <samp>Hello World</samp>
+                </p>
+
+                <p>
+                    Formula: <var>x</var><sup>2</sup> + <var>y</var><sub>1</sub>
+                </p>
+
+                <p>
+                    <time datetime="2026-01-07">January 7, 2026</time>
+                </p>
+
+                <small>Updated recently</small>
+
+                <p>
+                    <del>Old content</del>
+                    <ins>New updated content</ins>
+                </p>
+
+                <hr>
+                <p>End of article<br>Thanks for reading!</p>
+
+                <address>
+                    Written by Ramya<br>
+                    Contact: ramya@example.com
+                </address>
+            </article>
+        </section>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Related Topics</h3>
+            <ul>
+                <li>Accessibility</li>
+                <li>SEO</li>
+                <li>Web Standards</li>
+            </ul>
+        </aside>
+
+        <!-- FIGURE + MEDIA -->
+        <section>
+            <h2>Media Examples</h2>
+
+            <figure>
+                <img src="html.png" alt="HTML5 Logo" width="150">
+                <figcaption>HTML5 Semantic Logo</figcaption>
+            </figure>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <video controls width="300">
+                <source src="video.mp4" type="video/mp4">
+                <track kind="subtitles" src="subs.vtt" srclang="en">
+            </video>
+        </section>
+
+        <!-- LISTS -->
+        <section>
+            <h2>Lists</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <ol>
+                <li>Learn Basics</li>
+                <li>Practice</li>
+            </ol>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Markup language</dd>
+            </dl>
+        </section>
+
+        <!-- FORMS -->
+        <section>
+            <h2>User Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>User Info</legend>
+
+                    <label>Name:</label>
+                    <input type="text" list="names">
+
+                    <datalist id="names">
+                        <option value="Ramya">
+                        <option value="Admin">
+                    </datalist>
+
+                    <br>
+
+                    <label>Message:</label>
+                    <textarea></textarea>
+
+                    <br>
+
+                    <label>Role:</label>
+                    <select>
+                        <optgroup label="Tech">
+                            <option>Developer</option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+
+                <output>Result here</output>
+                <progress value="70" max="100"></progress>
+                <meter value="0.8">80%</meter>
+            </form>
+        </section>
+
+        <!-- TABLE -->
+        <section>
+            <h2>Student Table</h2>
+
+            <table>
+                <caption>Marks</caption>
+
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ramya</td>
+                        <td>95</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>95</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- INTERACTIVE -->
+        <section>
+            <details>
+                <summary>More Info</summary>
+                Semantic HTML improves UX.
+            </details>
+            <dialog open>
+                <p>This is a dialog box</p>
+            </dialog>
+            <template>
+                <p>This content is not rendered</p>
+            </template>
+            <slot></slot>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Web Fundamentals</p>
+    </footer>
+
+</body>
+
+</html>

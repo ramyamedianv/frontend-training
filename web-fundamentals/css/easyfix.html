@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFix Services</title>
+    <link rel="stylesheet" href="easyfix.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>EasyFix Services</h1>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <article>
+                <h2>Who We Are</h2>
+                <p>
+                    EasyFix provides reliable home services like plumbing,
+                    electrical repairs, and maintenance.
+                </p>
+
+                <figure>
+                    <img src="easy.jpg" alt="Technician repairing a home appliance" />
+                    <figcaption>Professional home service experts</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <div class="service-list">
+                <article class="card">
+                    <h3>Plumbing</h3>
+                    <p>Leak fixing, pipe installation, bathroom fittings.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Electrical</h3>
+                    <p>Wiring, fan installation, power backup support.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Maintenance</h3>
+                    <p>General home maintenance and safety checks.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service">
+                        <option>Plumbing</option>
+                        <option>Electrical</option>
+                        <option>Maintenance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" aria-label="Submit contact form">
+                    Send Request
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <address>
+            Contact: <a href="mailto:support@easyfix.com">support@easyfix.com</a>
+        </address>
+        <p>&copy; 2026 EasyFix Services</p>
+    </footer>
+
+</body>
+
+</html>

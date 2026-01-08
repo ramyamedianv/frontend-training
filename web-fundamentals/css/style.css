@@ -1,0 +1,149 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* =======================
+   1. BOX MODEL
+======================= */
+.box-model {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+/* =======================
+   2. POSITIONING
+======================= */
+.position-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed #999;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.static {
+    background: gray;
+    position: static;
+}
+
+.relative {
+    background: blue;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    background: green;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed {
+    background: red;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* =======================
+   3. FLEXBOX
+======================= */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+.flex-item {
+    background: #6c63ff;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+/* =======================
+   4. GRID
+======================= */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    background: #00bcd4;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* =======================
+   5. RESPONSIVE LAYOUT
+======================= */
+.responsive-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.responsive-layout nav,
+.responsive-layout main,
+.responsive-layout aside {
+    padding: 20px;
+    background: #e0e0e0;
+    text-align: center;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+@media (max-width: 768px) {
+    .responsive-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
